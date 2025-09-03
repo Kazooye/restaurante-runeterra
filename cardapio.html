@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Cardápio - Restaurante Runeterra</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="fade-in">
+        <h1>Nosso Cardápio</h1>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="cardapio.html">Cardápio</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="compra.html">Comprar</a>
+        </nav>
+    </header>
+
+    <section class="cardapio fade-in">
+        <div class="item fade-in">
+            <img src="https://th.bing.com/th/id/R.c58ae703d57f8549bf4fd5a8f91cf42d?rik=hGTmgyauENVK1w&riu=http%3a%2f%2fimg4.wikia.nocookie.net%2f__cb20150602171701%2fleagueoflegends%2fimages%2f3%2f38%2fNoxus_Crest_icon.png&ehk=bemYKcQoJn5wtSKtB5vcHNIKcfLpy8xhEMjgoT1AzTI%3d&risl=&pid=ImgRaw&r=0" alt="Picanha de Noxus">
+            <h3>🥩 Picanha de Noxus</h3>
+            <p>R$ 55,00</p>
+            <button onclick="adicionarCarrinho('Picanha de Noxus', 55)">Adicionar</button>
+        </div>
+        <div class="item fade-in">
+            <img src="https://th.bing.com/th/id/R.ce28954844af4d2190d18c13b75470e6?rik=RAurAWMjNO%2bpPg&riu=http%3a%2f%2fvignette1.wikia.nocookie.net%2fleagueoflegends%2fimages%2ff%2ffc%2fIonia_Crest_icon.png%2frevision%2flatest%3fcb%3d20160113202610&ehk=3QJyq9cCHJ6K8UUgQBK56%2bn6hzQ0dtU56JG2Drp94aU%3d&risl=&pid=ImgRaw&r=0" alt="Ensopado de Ionia">
+            <h3>🍜 Ensopado de Ionia</h3>
+            <p>R$ 40,00</p>
+            <button onclick="adicionarCarrinho('Ensopado de Ionia', 40)">Adicionar</button>
+        </div>
+        <div class="item fade-in">
+            <img src="https://tse1.mm.bing.net/th/id/OIP.CvOLwH_xkiTyQcM9FjHSUAAAAA?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Pizza Demaciana">
+            <h3>🍕 Pizza Demaciana</h3>
+            <p>R$ 35,00</p>
+            <button onclick="adicionarCarrinho('Pizza Demaciana', 35)">Adicionar</button>
+        </div>
+        <div class="item fade-in">
+            <img src="https://th.bing.com/th/id/R.812ce4f93dc68f50d4ee180da221e506?rik=RxJyeA%2bWOd7%2bmw&pid=ImgRaw&r=0" alt="Suco de Bandopolis">
+            <h3>🍹 Suco de Bandopolis</h3>
+            <p>R$ 12,00</p>
+            <button onclick="adicionarCarrinho('Suco de Bandopolis', 12)">Adicionar</button>
+        </div>
+        <div class="item fade-in">
+            <img src="https://universe.leagueoflegends.com/images/zaun_crest_icon.png" alt="Suco de Sentila Zaunita">
+            <h3>🍸 Suco de Sentila Zaunita</h3>
+            <p>R$ 12,00</p>
+            <button onclick="adicionarCarrinho('Suco de Sentila Zaunita', 12)">Adicionar</button>
+        </div>
+        <div class="item fade-in">
+            <img src="https://tse3.mm.bing.net/th/id/OIP.I2Lx4JYjQq3JDA9m5soEYQAAAA?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Pescado de Sentina">
+            <h3>🍤 Pescado de Sentina</h3>
+            <p>R$ 40,00</p>
+            <button onclick="adicionarCarrinho('Pescado de Sentina', 40)">Adicionar</button>
+        </div>
+        <div class="item fade-in">
+            <img src="https://universe.leagueoflegends.com/images/freljord_crest_icon.png" alt="Sorvete de Freljord">
+            <h3>🍰 Sorvete de Freljord</h3>
+            <p>R$ 18,00</p>
+            <button onclick="adicionarCarrinho('Sorvete de Freljord', 18)">Adicionar</button>
+        </div>
+        <div class="item fade-in">
+            <img src="https://universe.leagueoflegends.com/images/shurima_crest_icon.png" alt="Burrito Shurimane">
+            <h3>🌯 Burrito Shurimane</h3>
+            <p>R$ 25,00</p>
+            <button onclick="adicionarCarrinho('Burrito Shurimane', 25)">Adicionar</button>
+        </div>
+        <div class="item fade-in">
+            <img src="https://wiki.leagueoflegends.com/en-us/images/thumb/Void_Crest_icon.png/200px-Void_Crest_icon.png?b33ef" alt="Macarrão do Vazio">
+            <h3>🍲 Macarrão do Vazio</h3>
+            <p>R$ 30,00</p>
+            <button onclick="adicionarCarrinho('Macarrão do Vazio', 30)">Adicionar</button>
+        </div>
+        <div class="item fade-in">
+            <img src="https://static.wikia.nocookie.net/leagueoflegends/images/a/a6/Ixtal_Crest_icon.png/revision/latest/scale-to-width/360?cb=20190613145504" alt="Moqueca de Ixtal">
+            <h3>🥞 Moqueca de Ixtal</h3>
+            <p>R$ 18,00</p>
+            <button onclick="adicionarCarrinho('Moqueca de Ixtal', 18)">Adicionar</button>
+        </div>
+        <div class="item fade-in">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvyl0WBsKfd5iPUQWqiaC0YesYLNdPD1hCeg&s" alt="Hamburguer de Piltover">
+            <h3>🍔 Hamburguer de Piltover</h3>
+            <p>R$ 30,00</p>
+            <button onclick="adicionarCarrinho('Hamburguer de Piltover', 30)">Adicionar</button>
+        </div>
+        <div class="item fade-in">
+            <img src="https://universe.leagueoflegends.com/images/shadow_isles_crest_icon.png" alt="Rum da Ilha das Sombras">
+            <h3>🍷 Rum da Ilha das Sombras</h3>
+            <p>R$ 15,00</p>
+            <button onclick="adicionarCarrinho('Rum da Ilha das Sombras', 15)">Adicionar</button>
+        </div>
+    </section>
+
+    <!-- ===== RODAPÉ ===== -->
+    <footer class="fade-in">
+        <h3>Contato</h3>
+        <p>Email: jalam.by.paul@hotmail.com</p>
+        <p>Telefone: (11) 99613-3096</p>
+        <p>Endereço: Rua Pentakill, 5 - Monte Targon - Guarulhos</p>
+        <p>&copy; 2025 Restaurante Runeterra</p>
+    </footer>
+
+    <!-- ===== SCRIPT FADE-IN ===== -->
+    <script>
+        const fadeEls = document.querySelectorAll('.fade-in');
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if(entry.isIntersecting){
+                    entry.target.classList.add('show');
+                    observer.unobserve(entry.target); // anima apenas uma vez
+                }
+            });
+        }, { threshold: 0.1 });
+
+        fadeEls.forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>
