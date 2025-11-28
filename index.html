@@ -4,21 +4,28 @@
     <meta charset="UTF-8">
     <title>Restaurante Runeterra</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
+
 <body>
     <header class="fade-in">
-        <img src="https://tse3.mm.bing.net/th/id/OIP.PUdBxvZXbNd6YkgALWAUXgHaEK?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Banner Restaurante Runeterra" class="banner">
-        <h1>🍴 Bem-vindo ao Restaurante Runeterra 🍷</h1>
+        <h1>Restaurante Runeterra</h1>
         <nav>
             <a href="index.html">Início</a>
             <a href="cardapio.html">Cardápio</a>
             <a href="sobre.html">Sobre</a>
             <a href="compra.html">Comprar</a>
+            <a href="estoque.html">Estoque</a>
+            <li id="menuLogin"><a href="login.html">Login</a></li>
+            <li id="menuCadastro"><a href="cadastro.html">Cadastro</a></li>
+            <li id="menuPerfil"><a href="perfil.html">Meu Perfil</a></li>
+            <li id="menuSair"><a href="#" id="logoutBtn">Sair</a></li>
+            
+
         </nav>
     </header>
 
-    <!-- ===== INTRO + CTA ===== -->
-    <section class="intro fade-in">
+     <section class="intro fade-in">
         <h2>Sabores épicos inspirados no universo de Runeterra!</h2>
         <p>Experimente pratos lendários que unem tradição e fantasia.</p>
         <div class="botoes-intro">
@@ -27,7 +34,6 @@
         </div>
     </section>
 
-    <!-- ===== DESTAQUES ===== -->
     <section class="destaques fade-in">
         <h2>Pratos em Destaque</h2>
         <div class="cards-destaque">
@@ -49,7 +55,6 @@
         </div>
     </section>
 
-    <!-- ===== HISTÓRIA ===== -->
     <section class="historia fade-in">
         <h2>Conheça nossa história</h2>
         <p>Do Noxus a Freljord, cada prato conta uma história épica do universo de Runeterra, trazendo tradição e fantasia para sua mesa.</p>
@@ -60,7 +65,6 @@
         </div>
     </section>
 
-    <!-- ===== RODAPÉ ===== -->
     <footer class="fade-in">
         <h3>Contato</h3>
         <p>Email: richie.macedo@hotmail.com</p>
@@ -68,23 +72,6 @@
         <p>Endereço: Rua Pentakill, 5 - Monte Targon - Guarulhos</p>
         <p>&copy; 2025 Restaurante Runeterra</p>
     </footer>
-
-    <!-- ===== SCRIPT FADE-IN ===== -->
-    <script>
-        const fadeEls = document.querySelectorAll('.fade-in');
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if(entry.isIntersecting){
-                    entry.target.classList.add('show');
-                    observer.unobserve(entry.target); // anima apenas uma vez
-                }
-            });
-        }, { threshold: 0.1 });
-
-        fadeEls.forEach(el => observer.observe(el));
-    </script>
 </body>
 </html>
-
 
