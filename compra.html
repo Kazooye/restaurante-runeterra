@@ -2,70 +2,43 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Comprar - Restaurante Runeterra</title>
+    <title>Carrinho - Restaurante Runeterra</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
+
 <body>
     <header class="fade-in">
-        <h1>🛒 Carrinho de Compras</h1>
+        <h1>Seu Carrinho</h1>
         <nav>
-            <a href="index.html">Início</a>
+           <a href="index.html">Início</a>
             <a href="cardapio.html">Cardápio</a>
             <a href="sobre.html">Sobre</a>
             <a href="compra.html">Comprar</a>
+            <a href="estoque.html">Estoque</a>
+            <li id="menuLogin"><a href="login.html">Login</a></li>
+            <li id="menuCadastro"><a href="cadastro.html">Cadastro</a></li>
+            <li id="menuPerfil"><a href="perfil.html">Meu Perfil</a></li>
+            <li id="menuSair"><a href="#" id="logoutBtn">Sair</a></li>
+
         </nav>
     </header>
 
-    <section class="carrinho fade-in">
-        <h2>Seus Itens</h2>
-        <ul id="carrinho-lista"></ul>
-        <p><strong>Total:</strong> R$ <span id="total">0,00</span></p>
-    </section>
+    <section class="fade-in texto">
+        <h2>Itens adicionados:</h2>
+        <ul id="listaCarrinho"></ul>
+        <h3 id="total"></h3>
 
-    <section class="pagamento fade-in">
-        <h2>Finalizar Compra</h2>
-        <form id="pagamento-form">
-            <label>Nome no cartão:</label><br>
-            <input type="text" required><br><br>
-
-            <label>Número do cartão:</label><br>
-            <input type="text" maxlength="16" required><br><br>
-
-            <label>Validade:</label><br>
-            <input type="month" required><br><br>
-
-            <label>CVV:</label><br>
-            <input type="text" maxlength="3" required><br><br>
-
-            <button type="submit">Pagar</button>
-        </form>
-        <p id="mensagem"></p>
+        <button class="botao" onclick="finalizarCompra()">Finalizar Compra</button>
     </section>
 
     <footer class="fade-in">
         <h3>Contato</h3>
-        <p>Email: richard.macedo@hotmail.com</p>
+        <p>Email: richie.macedo@hotmail.com</p>
         <p>Telefone: (11) 99613-3096</p>
         <p>Endereço: Rua Pentakill, 5 - Monte Targon - Guarulhos</p>
         <p>&copy; 2025 Restaurante Runeterra</p>
     </footer>
-
-    <!-- ===== SCRIPT FADE-IN ===== -->
-    <script>
-        const fadeEls = document.querySelectorAll('.fade-in');
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if(entry.isIntersecting){
-                    entry.target.classList.add('show');
-                    observer.unobserve(entry.target); // anima apenas uma vez
-                }
-            });
-        }, { threshold: 0.1 });
-
-        fadeEls.forEach(el => observer.observe(el));
-    </script>
-    <script src="script.js"></script>
 </body>
 </html>
 
