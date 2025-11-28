@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Login - Restaurante Runeterra</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header class="fade-in">
+        <h1>Login</h1>
+        <nav>
+           <a href="index.html">Início</a>
+            <a href="cardapio.html">Cardápio</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="compra.html">Comprar</a>
+            <a href="estoque.html">Estoque</a>
+            <li id="menuLogin"><a href="login.html">Login</a></li>
+            <li id="menuCadastro"><a href="cadastro.html">Cadastro</a></li>
+            <li id="menuPerfil"><a href="perfil.html">Meu Perfil</a></li>
+            <li id="menuSair"><a href="#" id="logoutBtn">Sair</a></li>
+
+        </nav>
+    </header>
+
+    <section class="fade-in" style="text-align:center; margin-top:40px;">
+        <h2>Entre na sua Conta</h2>
+
+        <div class="form-box">
+            <input id="loginEmail" type="email" placeholder="Seu email">
+            <input id="loginSenha" type="password" placeholder="Sua senha">
+
+            <button onclick="loginUsuario()">Entrar</button>
+
+            <p style="margin-top:15px;">
+                Não tem conta?  
+                <a href="cadastro.html" style="color:yellow;">Cadastre-se</a>
+            </p>
+
+            <p id="loginMensagem" style="color:red; margin-top:10px;"></p>
+        </div>
+    </section>
+
+    <footer class="fade-in">
+        <h3>Contato</h3>
+        <p>Email: richie.macedo@hotmail.com</p>
+        <p>Telefone: (11) 99613-3096</p>
+        <p>Endereço: Rua Pentakill, 5 - Monte Targon - Guarulhos</p>
+        <p>&copy; 2025 Restaurante Runeterra</p>
+    </footer>
+</body>
+</html>
